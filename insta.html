@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones del Instituto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-bg-color: #f4f4f4;
+            --card-bg-color: #ffffff;
+            --text-color: #333;
+            --subtext-color: #666;
+            --accent-color: #007BFF;
+            --hover-bg-color: rgba(0, 0, 0, 0.05);
+            --shadow-color: rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--main-bg-color);
+        }
+        h1 {
+            font-family: 'Lora', serif;
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 30px var(--shadow-color);
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            color: var(--text-color);
+            margin: 15px 0;
+        }
+        .card p {
+            padding: 0 15px 15px;
+            color: var(--subtext-color);
+        }
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+        }
+        .button:hover {
+            background-color: #0056b3; /* Color más oscuro en hover */
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Instalaciones de Nuestro Instituto</h1>
+    
+    <div class="container">
+        <div class="card">
+            <img src="https://i0.wp.com/ampuertocortes.hn/wp-content/uploads/2019/04/56419487_2149736948451671_928135719631716352_n-1.jpg?fit=960%2C640&ssl=1" alt="Aulas modernas y equipadas">
+            <h3>Aulas Equipadas</h3>
+            <p>Aulas modernas con tecnología de punta para facilitar el aprendizaje.</p>
+            <a href="#" class="button">Más Información</a>
+        </div>
+        <div class="card">
+            <img src="https://cdihh.ihah.hn/wp-content/uploads/2022/09/8.jpg" alt="Biblioteca con amplia colección">
+            <h3>Biblioteca</h3>
+            <p>Una amplia colección de recursos para apoyar tus estudios.</p>
+            <a href="#" class="button">Más Información</a>
+        </div>
+        <div class="card">
+            <img src="https://www.sma.maristas.cl/data/infraestructura/laboratorios_computacion/multimedia/imagen/Thumbs/IMG_5803_thumb.jpg" alt="Laboratorios bien equipados">
+            <h3>Laboratorios</h3>
+            <p>Laboratorios bien equipados para prácticas de diversas disciplinas.</p>
+            <a href="#" class="button">Más Información</a>
+        </div>
+        <div class="card">
+            <img src="https://www.laprensa.hn/binrepository/600x347/0c0/0d0/none/11004/BEGA/sc-comidasbuena-080216_LP927418_MG66204348.jpg" alt="Comedor con opciones saludables">
+            <h3>Comedor</h3>
+            <p>Opciones de comida saludable para una vida equilibrada.</p>
+            <a href="#" class="button">Más Información</a>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC9I0y_vEM42st0_wDgJMKGrHWpzbAhaw9xQ&s" alt="Instalaciones deportivas">
+            <h3>Instalaciones Deportivas</h3>
+            <p>Espacios diseñados para fomentar un estilo de vida activo.</p>
+            <a href="#" class="button">Más Información</a>
+        </div>
+        <div class="card">
+            <img src="C:\Users\prop\Downloads\WhatsApp Image 2024-10-31 at 8.02.39 AM.jpeg" alt="Eventos">
+            <h3>Eventos Solidarios</h3>
+            <p>Equipamiento avanzado para formar a los futuros líderes tecnológicos.</p>
+            <a href="#" class="button">Más Información</a>
+        </div>
+    </div>
+
+</body>
+</html>

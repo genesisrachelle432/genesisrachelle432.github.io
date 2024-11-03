@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d3d1cf;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="tel"],
+        .contact-form input[type="email"],
+        .contact-form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #aba5a5;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #9ae5f8;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #7fb8ed;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <input type="number" name="ano_nacimiento" placeholder="Año de Nacimiento" required>
+        <input type="text" name="numero_identidad" placeholder="Número de Identidad" required>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>
+</html>

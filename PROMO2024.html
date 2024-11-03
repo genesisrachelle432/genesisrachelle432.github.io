@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo de Graduados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffde00; /* Amarillo */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .graduado {
+            display: inline-block;
+            margin: 15px;
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            padding: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative; /* Para el texto */
+            overflow: hidden; /* Para ocultar el texto inicialmente */
+        }
+        .graduado img {
+            max-width: 150px;
+            border-radius: 75px; /* Forma ovalada */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .graduado:hover img {
+            transform: scale(1.1); /* Efecto de zoom en la imagen */
+        }
+        .texto {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555; /* Texto gris */
+            position: absolute; /* Posiciona el texto sobre la imagen */
+            bottom: 15px; /* Ajusta la posición */
+            left: 50%;
+            transform: translateX(-50%); /* Centra el texto */
+            opacity: 0; /* Inicialmente oculto */
+            transition: opacity 0.3s; /* Transición de opacidad */
+        }
+        .graduado:hover .texto {
+            opacity: 1; /* Texto visible al hacer hover */
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #000; /* Texto negro */
+            text-shadow: none; /* Sin sombra */
+        }
+    </style>
+</head>
+<body>
+    <h1>¡PROMO 2024!</h1>
+    
+    <!-- Espacios para Graduados -->
+    <div class="graduado">
+        <img src="abi.jfif" alt="Greysi Cardona">
+        <div class="texto">"El futuro pertenece a quienes creen en la belleza de sus sueños."</div>
+        <h2>Greysi Cardona</h2>
+    </div>
+    <div class="graduado">
+        <img src="Alex.jfif" alt="Alex Mejia">
+        <div class="texto">"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito."</div>
+        <h2>Alex Mejia</h2>
+    </div>
+    <div class="graduado">
+        <img src="Andrea.jfif" alt="Andrea Benitez">
+        <div class="texto">"La educación es el pasaporte hacia el futuro, pues el mañana pertenece a quienes se preparan hoy."</div>
+        <h2>Andrea Benitez</h2>
+    </div>
+    <div class="graduado">
+        <img src="angie.jfif" alt="Angie Alvarado">
+        <div class="texto">"No importa cuántas veces fracases, lo importante es que te levantes y sigas adelante."</div>
+        <h2>Angie Alvarado</h2>
+    </div>
+    <div class="graduado">
+        <img src="Arnoldo.jfif" alt="Arnoldo Alvarenga">
+        <div class="texto">"Cada final es un nuevo comienzo. No tengas miedo de escribir tu propia historia."</div>
+        <h2>Arnoldo Alvarenga</h2>
+    </div>
+    <div class="graduado">
+        <img src="ashley.jfif" alt="Ashley Herrera">
+        <div class="texto">"Elige un trabajo que ames y no tendrás que trabajar ni un día en tu vida."</div>
+        <h2>Ashley Herrera</h2>
+    </div>
+    <div class="graduado">
+        <img src="astrid.jfif" alt="Astrid Chavez">
+        <div class="texto">"La clave del éxito es comenzar antes de estar listo." </div>
+        <h2>Astrid Chavez</h2>
+    </div>
+    <div class="graduado">
+        <img src="Daniela.jfif" alt="Ashley Varela">
+        <div class="texto">"No se trata de cuán lejos llegues, sino de lo que aprendas en el camino."</div>
+        <h2>Ashley Varela</h2>
+    </div>
+    <div class="graduado">
+        <img src="Elsa.jfif" alt="Elsa Gallardo">
+        <div class="texto">"No te rindas jamás."</div>
+        <h2>Elsa Gallardo</h2>
+    </div>
+    <div class="graduado">
+        <img src="Erwin.jfif" alt="Erwin Ordoñez">
+        <div class="texto">"Cree en el proceso."</div>
+        <h2>Erwin Ordoñez</h2>
+    </div>
+    <div class="graduado">
+        <img src="Heydi.jfif" alt="Heydi Molina">
+        <div class="texto">"Eres más fuerte de lo que crees."</div>
+        <h2>Heydi Molina</h2>
+    </div>
+    <div class="graduado">
+        <img src="Isai.jfif" alt="Daniel Henriquez">
+        <div class="texto">"La perseverancia vence."</div>
+        <h2>Daniel Henriquez</h2>
+    </div>
+    <div class="graduado">
+        <img src="Jostyn.jfif" alt="Jostyn Chavez">
+        <div class="texto">"Actúa con valentía."</div>
+        <h2>Jostyn Chavez</h2>
+    </div>
+    <div class="graduado">
+        <img src="Kenny.jfif" alt="Kenny Gomez">
+        <div class="texto">"Desafía tus límites."</div>
+        <h2>Kenny Gomez</h2>
+    </div>
+    <div class="graduado">
+        <img src="Kritza.jfif" alt="Kritza Aguirre">
+        <div class="texto">"Cambia el mundo."</div>
+        <h2>Kritza Aguirre</h2>
+    </div>
+    <div class="graduado">
+        <img src="Lohany.jfif" alt="Lohany Ortiz">
+        <div class="texto">"Actúa con valentía."</div>
+        <h2>Lohany Ortiz</h2>
+    </div>
+    <div class="graduado">
+        <img src="Meylin.jfif" alt="Meylin Alvarado">
+        <div class="texto">"El esfuerzo trae resultados."</div>
+        <h2>Meylin Alvarado</h2>
+    </div>
+    <div class="graduado">
+        <img src="Rachelle.jfif" alt="Genesis Murillo">
+        <div class="texto">"El fracaso es un paso al éxito."</div>
+        <h2>Genesis Murillo</h2>
+    </div>
+    <div class="graduado">
+        <img src="pajaro.jfif" alt="Erick Morales">
+        <div class="texto">"Desafía tus límites."</div>
+        <h2>Erick Morales</h2>
+    </div>
+    
+</body>
+</html>

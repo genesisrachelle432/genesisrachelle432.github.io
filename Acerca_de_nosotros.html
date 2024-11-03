@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Franklin Delano Roosevelt</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f3e8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8ad9fe;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #80c4e9;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #8eccf3;
+        }
+        .header-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .butons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #90e1fe;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .butons a:hover {
+            background-color: #57b3f5;
+        }
+        .advantages {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            margin: 20px;
+        }
+        .advantages h2 {
+            color: #5a4b3a;
+        }
+        .advantages p {
+            line-height: 1.6;
+        }
+        .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact input[type="email"], .contact input[type="submit"] {
+            padding: 10px;
+            border: 2px solid #5a4b3a;
+            border-radius: 5px;
+            width: 250px;
+            margin: 5px 0;
+        }
+        .contact input[type="submit"] {
+            background-color: #7cb9f1;
+            color: white;
+            cursor: pointer;
+        }
+        .contact input[type="submit"]:hover {
+            background-color: #77c5f6;
+        }
+        footer {
+            background-color: #e3e0dc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 5px solid #8ecff5;
+        }
+        /* Estilos para el formulario de inscripción */
+        #formulario {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            width: 90%;
+            max-width: 400px;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+        #formulario label {
+            margin-top: 10px;
+            display: block;
+        }
+        #formulario input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #5a4b3a;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+        #formulario input:focus {
+            border-color: #c2a08d;
+            outline: none;
+        }
+        #formulario button {
+            margin-top: 10px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #formulario button:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="menu container">
+        <a href="#" class="logo">Logo</a>
+        <h1>INSTITUTO GUBERNAMENTAL <span>FRANKLIN DELANO</span> ROOSEVELT</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="F.html">Inicio</a></li>
+                <li><a href="Acercade.html">Acerca de</a></li>
+                <li><a href="logo.html">FDR</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="header-content container">
+    <div class="header-txt">
+        <p>Bienvenidos a nuestro instituto. Aquí formamos líderes del futuro.</p>
+        <div class="butons">
+            <a href="#" id="btnInscripcion" class="btn-1">Inscripción</a>
+        </div>
+    </div>
+</div>
+
+<section class="advantages">
+    <h2>Ventajas de Estar con Nosotros</h2>
+    <p>Nuestro instituto cuenta con instalaciones modernas y cómodas, diseñadas para potenciar el aprendizaje y el desarrollo personal.</p>
+    <p>Ofrecemos:</p>
+    <ul style="list-style-type: none; padding: 0;">
+        <li>🖥️ Aulas equipadas con tecnología de punta.</li>
+        <li>📚 Biblioteca con una amplia colección de recursos.</li>
+        <li>🏋️ Instalaciones deportivas para fomentar un estilo de vida activo.</li>
+        <li>🍽️ Comedor con opciones saludables.</li>
+        <li>👩‍🏫 Profesores altamente capacitados y comprometidos.</li>
+    </ul>
+</section>
+
+<section class="contact container">
+    <div class="contact-content">
+        <h3>Visítanos</h3>
+        <form>
+            <input type="email" placeholder="Escribe tu correo" required>
+            <input type="submit" class="btn-3" value="Enviar">
+        </form>
+    </div>
+</section>
+
+<!-- Formulario de Inscripción -->
+<div id="overlay"></div>
+<div id="formulario">
+    <h2>Formulario de Inscripción</h2>
+    <form id="inscripcionForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="emailInscripcion">Email:</label>
+        <input type="email" id="emailInscripcion" name="emailInscripcion" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        
+        <input type="submit" value="Enviar">
+        <button type="button" id="btnCerrar">Cerrar</button>
+    </form>
+</div>
+
+<footer class="footer container">
+    <div class="link">
+        <a href="#" class="logo">Logo</a>
+    </div>
+    <div class="link">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca De</a></li>
+            <li><a href="#">FDR</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('btnInscripcion').addEventListener('click', function() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('formulario').style.display = 'block';
+    });
+
+    document.getElementById('btnCerrar').addEventListener('click', function() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('formulario').style.display = 'none';
+    });
+
+    document.getElementById('inscripcionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Formulario de inscripción enviado.'); // Aquí puedes manejar el envío real.
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('formulario').style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
+
+    
